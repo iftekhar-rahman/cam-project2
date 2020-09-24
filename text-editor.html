@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Title</title>
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+        
+		<div class="site-wrap overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="site-header d-flex justify-content-between">
+                            <div class="col-one">
+                                <div class="position-relative">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-three text-right">
+                                <a href="#">Done</a>
+                            </div>
+                        </div><!-- site-header ends -->
+                    </div>
+                </div>
+            </div>
+            <div class="image-here-section">
+                <div class="uploaded-image">
+                    <img src="img/uploaded.jpg" alt="largeImage">
+                </div>
+            </div><!-- image-here-section ends -->
+            <div class="form-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-header d-flex justify-content-between">
+                                <div class="redo-undo-buttons d-flex">
+                                    <div class="redo-undo-btns active">
+                                        <img src="img/undo-enabled.png" alt="undo">
+                                    </div>
+                                    <div class="redo-undo-btns">
+                                        <img src="img/redo-enabled.png" alt="redo">
+                                    </div>
+                                </div>
+                                <div class="toggle-button d-flex align-items-center text-right">
+                                    <span>Text layer</span>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabbedPanels starts -->
+                <div class="tabbedPanels">  
+                    <ul class="tabs">
+                        <li><a href="#panel1">Font</a></li>
+                        <li><a href="#panel2">Outline</a></li>
+                        <li><a href="#panel3">Shadow</a></li>
+                    </ul>
+                    <div class="panelContainer">
+                        <!-- panel1 starts -->
+                        <div id="panel1" class="panel">
+                            <!-- color-picker starts -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="color-box d-flex justify-content-center">
+                                            <div class="single-color-item color-picker overflow-hidden black">
+                                                <label class="color-picker-icon" for="favcolor1">
+                                                    <input class="colori" type="color" id="favcolor1" name="favcolor1" value="#D7D7D7">
+                                                </label>
+                                            </div>
+                                            <div class="single-color-item addclass black"></div>
+                                            <div class="single-color-item addclass red active"></div>
+                                            <div class="single-color-item addclass blue"></div>
+                                            <div class="single-color-item addclass white"></div>
+                                            <div class="single-color-item addclass yellow"></div>
+                                            <div class="single-color-item addclass green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- color-picker ends -->
+                            <!-- range-slider-wrap starts -->
+                            <div class="range-slider-wrap">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="range-wrapper">
+                                                <input value="50" id="slider" type="range">
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- range-slider ends -->
+                            <div class="bottom-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-between">
+                                            <div class="font-change d-flex align-items-center position-relative">
+                                                <div class="fonts-box">
+                                                    <form method="POST">
+                                                        <div class="single-font helvetica">
+                                                            <input type="radio" id="font1" name="font" checked>
+                                                            <label for="font1">Helvetica</label>
+                                                        </div>
+                                                        <div class="single-font georgia">
+                                                            <input type="radio" id="font2" name="font">
+                                                            <label for="font2">Georgia</label>
+                                                        </div>
+                                                        <div class="single-font noteworthy">
+                                                            <input type="radio" id="font3" name="font">
+                                                            <label for="font3">Noteworthy</label>
+                                                        </div>
+                                                        <div class="single-font chalkboard">
+                                                            <input type="radio" id="font4" name="font">
+                                                            <label for="font4">Chlakboard</label>
+                                                        </div>
+                                                        <div class="single-font lato">
+                                                            <input type="radio" id="font6" name="font">
+                                                            <label for="font6">Lato</label>
+                                                        </div>
+                                                        <div class="single-font montserrat">
+                                                            <input type="radio" id="font7" name="font">
+                                                            <label for="font7">Montserrat</label>
+                                                        </div>
+                                                        <div class="single-font open-sans">
+                                                            <input type="radio" id="font8" name="font">
+                                                            <label for="font8">Open Sans</label>
+                                                        </div>
+                                                        <div class="single-font poppins">
+                                                            <input type="radio" id="font9" name="font">
+                                                            <label for="font9">Poppins</label>
+                                                        </div>
+                                                        <div class="single-font roboto">
+                                                            <input type="radio" id="font10" name="font">
+                                                            <label for="font10">Roboto</label>
+                                                        </div>
+                                                        <div class="single-font source-sans-pro">
+                                                            <input type="radio" id="font11" name="font">
+                                                            <label for="font11">Source Sans Pro</label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <span class="arrow"></span>
+                                                <div class="font-change-btn">
+                                                    <span><img src="img/font-change.png" alt="font-change"></span>
+                                                </div>
+                                            </div>
+                                            <div class="font-alignment d-flex justify-content-between align-items-center">
+                                                <div class="single-font-alignment">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment center active">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment right">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <div class="single-font-alignment full">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- bottom-section ends -->
+                        </div><!-- end panel 1 -->
+                        <!-- panel2 starts -->
+                        <div id="panel2" class="panel">
+                            <!-- color-picker starts -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="color-box d-flex justify-content-center">
+                                            <div class="single-color-item color-picker overflow-hidden black">
+                                                <label class="color-picker-icon" for="favcolor2">
+                                                    <input class="colori" type="color" id="favcolor2" name="favcolor2" value="#D7D7D7">
+                                                </label>
+                                            </div>
+                                            <div class="single-color-item addclass black"></div>
+                                            <div class="single-color-item addclass red"></div>
+                                            <div class="single-color-item addclass blue"></div>
+                                            <div class="single-color-item addclass white active"></div>
+                                            <div class="single-color-item addclass yellow"></div>
+                                            <div class="single-color-item addclass green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- color-picker ends -->
+                            <div class="range-slider-wrap">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="range-wrapper">
+                                                <input value="20" id="slider2" type="range">
+                                                <div class="fill2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- range-slider ends -->
+                            
+                        </div> <!-- end panel 2 -->
+                        <div id="panel3" class="panel">
+                            <!-- color-picker starts -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="color-box d-flex justify-content-center">
+                                            <div class="single-color-item color-picker overflow-hidden black">
+                                                <label class="color-picker-icon" for="favcolor3">
+                                                    <input class="colori" type="color" id="favcolor3" name="favcolor3" value="#D7D7D7">
+                                                </label>
+                                            </div>
+                                            <div class="single-color-item addclass black active"></div>
+                                            <div class="single-color-item addclass red"></div>
+                                            <div class="single-color-item addclass blue"></div>
+                                            <div class="single-color-item addclass white"></div>
+                                            <div class="single-color-item addclass yellow"></div>
+                                            <div class="single-color-item addclass green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- color-picker ends -->
+                            <div class="range-slider-wrap">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="range-wrapper">
+                                                <input value="75" id="slider3" type="range">
+                                                <div class="fill3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- range-slider ends -->
+                            
+                        </div>  <!-- end panel 3 -->
+                    </div>
+                </div> <!-- tabbedPanels ends -->
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="overlay2"></div>
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

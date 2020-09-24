@@ -1,0 +1,27 @@
+/*============== Footer CSS ================*/
+.site-footer {
+    background: #292929;
+    padding: 25px 0 30px;
+    @extend %posfixed;
+    @extend %w100;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    img {
+        max-width: 40px;
+        margin-bottom: 10px;
+    }
+    ul{
+        @extend %displayfelx;
+        height: 70px;
+        li{
+            @extend %displayinline;
+            @extend %textcenter;
+            flex-basis: 33.3333%;
+            a {
+                @extend %white-color;
+                @extend %displayinline;
+            }
+        }
+    }
+}

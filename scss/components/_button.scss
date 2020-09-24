@@ -1,0 +1,19 @@
+/*=========== Button CSS ==========*/
+
+.boxed-btn, input[type=submit], button[type=submit]{
+    @extend %white-color;
+    @extend %uppercase;
+    @extend %textcenter;
+    @extend %displayinline;
+    @extend %borderradius50;
+    background-color: #007AFF;
+    text-decoration: none;
+    padding: 4px 18px;
+    font-size: 13px;
+    @include mx-mobile-xs{
+        padding: 4px 10px;
+    }
+}
+.boxed-btn:hover, input[type=submit]:hover, button[type=submit]:hover {
+    @extend %white-color;
+}

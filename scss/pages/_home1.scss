@@ -1,0 +1,87 @@
+/*================Home1 Page CSS===============*/
+/* ------------file upload---------- css */
+// .upload-wrap input {
+//     display: none;
+// }
+// .upload-wrap input + label {
+//     @extend %displayinline;
+//     @extend %w100;
+//     @extend %h100;
+//     @extend %cursorpointer;
+//     font-weight: normal;
+//     transition: all .2s ease-in-out;
+// }
+// .upload-wrap input[type=file] {
+//     margin: 0 auto;
+//     opacity: 0;
+//     @extend %displayblock;
+//     @extend %posabsolute;
+//     top: 0;
+//     left: 0;
+//     @extend %w100;
+//     @extend %h100;
+// }
+/*--------custom-carousel---------*/ 
+.flex {
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow: auto;
+}
+.flex-item {
+    flex: 0 0 auto;
+}
+
+
+/* --------homepage css--------- */
+.home-content {
+    padding: 50px 0;
+    .box-wrap{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .single-box {
+        width: 168px;
+        height: 168px;
+        background:#676767;
+        margin-right: 7px;
+        margin-bottom: 14px;
+        margin-left: 7px;
+        @extend %posrelative;
+        @include mx-mobile-xs{
+            width: 140px;
+            height: 140px;
+        }
+        @include tablet{
+            width: 220px;
+            height: 220px;
+        }
+    }
+}
+// .uploadpreview{
+//     height: 100px;
+//     @extend %w100;
+//     @extend %displayblock;
+//     border:1px solid #ccc;
+//     background-size:100% auto;
+//     background-repeat:no-repeat;
+//     background-position:center;
+//     @include mx-mobile-xs{
+//         height: 85px;
+//     }
+//     @include tablet{
+//         height: 200px;
+//     }
+// }
+.close-btn {
+    @extend %posabsolute;
+    right: -13px;
+    top: -11px;
+    @extend %cursorpointer;
+    img{
+        max-width: 25px;
+    }
+}
+
+

@@ -1,0 +1,18 @@
+/* ------------result css-------------- */
+.site-header.result .col-three a {
+  padding: 0px 0 0px 10px; }
+  .site-header.result .col-three a img {
+    max-width: 20px; }
+
+.image-here-section ul {
+  margin-bottom: 30px; }
+  .image-here-section ul li a {
+    padding: 3px 5px;
+    border-radius: 50px;
+    font-size: 15px; }
+  .image-here-section ul li.active a {
+    background: #007AFF;
+    color: #fff; }
+
+.uploaded-image img {
+  width: 100%; }

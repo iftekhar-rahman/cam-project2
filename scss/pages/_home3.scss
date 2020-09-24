@@ -1,0 +1,43 @@
+/* ------------home3 css-------------- */
+.site-header {
+    &.result{
+        .col-three a{
+            padding: 0px 0 0px 10px;
+            img{
+                max-width: 20px;
+            }
+        }
+    }
+}
+.image-here-section {
+    padding-bottom: 150px;
+    ul {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        li {
+            position: relative;
+            a {
+                padding: 3px 10px;
+                border-radius: 50px;
+                font-size: 15px;
+            }
+            &.active a{
+                background: #007AFF;
+                color: #fff;;
+            }
+            &.delete-btn a{
+                position: absolute;
+                left: -80px;
+                top: 0px;
+                color: #007AFF;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.uploaded-image{
+    img{
+        width: 100%;
+    }
+}
