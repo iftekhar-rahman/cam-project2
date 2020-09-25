@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Template 6</title>
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+		<div class="site-wrap overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <!-- site-header starts -->
+                        <div class="site-header result d-flex justify-content-between">
+                            <div class="col-one">
+                                <div class="position-relative">
+                                    <span class="search-text">Search</span>
+                                </div>
+                            </div>
+                        </div><!-- site-header ends -->
+                        <!-- search-box starts -->
+                        <form action="POST">
+                            <div class="search-box d-flex">
+                                <div class="search-form position-relative">
+                                    <label for="myInput1">
+                                        <input id="myInput1" type="text" placeholder="Search"/>
+                                    </label>
+                                    <button type="submit" value="submit"><img src="img/search.png" alt="search"></button>
+                                    <span onclick="document.getElementById('myInput1').value = ''" class="close-icon"><img src="img/clearsearch.png" alt="clearsearch"></span>
+                                </div>
+                                <div class="cancel-btn">
+                                    <a href="#">Cancel</a>
+                                </div>
+                            </div><!-- search-box ends -->
+                        </form>
+                        <div class="categories-section recent">
+                            <div class="cat-left">
+                                <h4>Recent</h4>
+                            </div>
+                            <ul>
+                                <li><img src="img/cake.png" alt="cake"> <a href="#">Birthday</a></li>
+                                <li><img src="img/heart.png" alt="heart"> <a href="#">valentines</a></li>
+                                <li><img src="img/sports.png" alt="sports"> <a href="#">Test</a></li>
+                            </ul>
+                        </div><!-- categories-section ends -->
+                        <div class="categories-section suggested">
+                            <div class="cat-left">
+                                <h4>Suggested</h4>
+                            </div>
+                            <ul>
+                                <li><img src="img/cake.png" alt="cake"> <a href="#">Pop Culture</a></li>
+                                <li><img src="img/heart.png" alt="heart"> <a href="#">Professional</a></li>
+                                <li><img src="img/sports.png" alt="sports"> <a href="#">Festivals/Holidays</a></li>
+                                <li><img src="img/sports.png" alt="sports"> <a href="#">Add your photo</a></li>
+                                <li><img src="img/sports.png" alt="sports"> <a href="#">Create your own template</a></li>
+                            </ul>
+                        </div><!-- categories-section ends -->
+                    </div>
+                </div>
+            </div>
+            <!-- site-footer starts -->
+            <div class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/gallery.png" alt="gallery">
+                                        <p>My Projects</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/camera@1x.png" alt="camera">
+                                        <p>Camera</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/templates@1x.png" alt="templates">
+                                        <p>Templates</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- site-footer ends -->
+        </div>
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

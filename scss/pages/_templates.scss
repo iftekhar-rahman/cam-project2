@@ -30,6 +30,18 @@
             max-width: 20px;
         }
     }
+    .search-form {
+        width: 100%;
+    }
+    .cancel-btn {
+        width: 50px;
+        margin-left: 10px;
+        text-align: right;
+        a {
+            padding: 7px 0;
+            color: #8E8E96;
+        }
+    }
 }
 .single-carousel-item {
     font-size: 14px;
@@ -52,7 +64,14 @@
     }
 }
 .categories-section {
-    margin-bottom: 30px;
+    margin-bottom: 160px;
+    &.recent{
+        margin-bottom: 30px;
+    }
+    &.recent h4, &.suggested h4 {
+        font-size: 14px;
+        color: #8E8E96;
+    }
     ul {
         li {
             margin-left: 35px;
@@ -78,4 +97,81 @@
     @extend %posabsolute;
     left: -35px;
     top: 11px;
+}
+.results-page{
+    .search-box {
+        margin-bottom: 10px;
+    }
+}
+// template 4
+.image-here-section.templates {
+    background-position: center;
+    background-size: cover;
+    background-color: #444444;
+    text-align: center;
+    height: 350px;
+    color: #8E8E96;
+    padding-bottom: 16px;
+    .icon {
+        margin-bottom: 10px;
+        display: inline-block;
+        img {
+            max-width: 30px;
+        }
+    }
+    h4 {
+        color: #fff;
+        margin-bottom: 70px;
+    }
+    &.template-4{
+        padding-bottom: 0;
+        .uploaded-image-section{
+            background: #44444495;
+            padding: 40px 0 10px;
+            width: 100%;
+            h4 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &.template-5{
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        .uploaded-image-section {
+            margin-bottom: -7px;
+        }
+    }
+}
+.skip-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    a{
+        color: #007AFF;
+        padding: 5px;
+        &:hover{
+            color: #007AFF;
+        }
+    }
+}
+.template-save-form{
+    margin-bottom: 150px;
+    .search-box button[type=submit] {
+        position: relative;
+        background: #007AFF;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin-top: 13px;
+        text-transform: capitalize;
+        padding: 12px 10px 12px 12px;
+    }
+    .search-box input[type=text] {
+        padding: 12px 40px 12px 15px;
+        height: 43px;
+        background-color: #fff;
+        color: #000;
+    }
 }
