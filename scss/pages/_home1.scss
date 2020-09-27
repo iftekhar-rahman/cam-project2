@@ -28,7 +28,6 @@
     display: flex;
     flex-wrap: nowrap; 
     overflow: auto;
-    height: 140px;
 }
 .flex-item {
     flex: 0 0 auto;
@@ -39,7 +38,8 @@
 .home-content {
     padding: 50px 0;
     &.templates{
-        padding-top: 10px;
+        padding-top: 0px;
+        padding-bottom: 0;
     }
     &.templates-birthday{
         padding-top: 20px;
@@ -49,8 +49,8 @@
         margin-right: -10px;
     }
     .single-box {
-        width: 168px;
-        height: 168px;
+        width: 160px;
+        height: 160px;
         background:#676767;
         margin-right: 7px;
         margin-bottom: 14px;

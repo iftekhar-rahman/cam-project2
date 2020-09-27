@@ -51,9 +51,7 @@
     background-color: #676767;
     @include mx-mobile-xs{
         width: 115px;
-    }
-    img {
-        margin-bottom: 8px;
+        height: 115px;
     }
 }
 .section-carousel {
@@ -64,9 +62,8 @@
     }
 }
 .categories-section {
-    margin-bottom: 160px;
     &.recent{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     &.recent h4, &.suggested h4 {
         font-size: 14px;
@@ -98,10 +95,8 @@
     left: -35px;
     top: 11px;
 }
-.results-page{
-    .search-box {
-        margin-bottom: 10px;
-    }
+.search-box.results-page {
+    margin-bottom: 20px;
 }
 // template 4
 .image-here-section.templates {
@@ -173,5 +168,15 @@
         height: 43px;
         background-color: #fff;
         color: #000;
+        position: relative;
+    }
+    
+}
+
+.search-results {
+    margin-bottom: 130px;
+    .categories-section ul li a{
+        border-bottom: 0;
+        padding: 6px 0;
     }
 }
